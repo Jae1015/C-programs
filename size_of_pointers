@@ -1,4 +1,6 @@
 #include<stdio.h>
+/*size of pointers may depend upon CPU architecture,compiler and OS. A 32-bit machine will have 4 bytes,a 64-bit machine running on 32-bit OS
+will also have 4 bytes,64-bit machine-8bytes*/
 void main()
 {
 	int *i1, **i2;

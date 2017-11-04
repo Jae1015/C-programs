@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+	int p1=2,*ptr1=&p1,*ptr2, a[10];
+	printf("Valid operations:\n");
+	printf("Assigning value of another pointer\n");
+	ptr2=ptr1;
+	printf("addr: %u value: %d\n",ptr1,p1);
+	printf("addr: %u value: %d\n",ptr2,p1);
+	printf("Initialization to NULL or 0\n");
+	ptr1=0;
+	printf("%u",ptr1);
+	printf("\nIncrement and decrement:\n");
+	printf("%u\n",++ptr1);
+	printf("%u\n",--ptr2);
+	printf("When 2 pointers point to the same array and subtracted:\n");
+	ptr1=&a[0];
+	ptr2=&a[9];
+	printf("%u\n",ptr2-ptr1);
+	printf("INVALID OPERATIONS:\n");
+	/* ptr1*5 {Invalid operands to binary *}
+	*p1+*p2 {Invalid operands to binary +}
+	&x=10;{lvalue required as operand of assignment*/
+}

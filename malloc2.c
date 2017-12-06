@@ -23,6 +23,7 @@ void main()
 		
 		printf("\nenter book title:\n");
 		gets(b[i].title);
+		fflush(stdin);
 		printf("enter count for pages:\n");
 		scanf("%d",&b[i].page);
 		printf("enter price:\n");
